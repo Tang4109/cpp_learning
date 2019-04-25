@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  全局函数重载与类成员函数重载
+*@brief  前置++与前置--
 *@author ZhangYunjia
 *@date   2019/4/25/20:24
 
@@ -25,14 +25,13 @@ public:
 		cout << a << "+" << b << "i" << endl;
 	}
 	//类成员函数重载
-	complex_operation operator-(complex_operation &c2) {
-
-		complex_operation tmp(this->a-c2.a, this->b-c2.b);
-		return tmp;
-		
+	complex_operation& operator--() {
+		this->a--;
+		this->b--;
+		return *this;
 	}
 	//全局函数重载
-	friend complex_operation operator+(complex_operation &c1, complex_operation &c2);
+	friend complex_operation& operator++(complex_operation &c1);
 
 };
 /*
@@ -44,9 +43,12 @@ public:
 */
 
 //全局函数
-complex_operation operator+(complex_operation &c1, complex_operation &c2) {
-	complex_operation tmp(c1.a + c2.a, c1.b + c2.b);
-	return tmp;
+complex_operation& operator++(complex_operation &c1) {
+	//complex_operation tmp(c1.a + 1, c1.b + 1);
+	c1.a++;
+	c1.b++;
+	//return tmp;
+	return c1;
 }
 
 
@@ -54,14 +56,14 @@ int main()
 {
 
 	complex_operation c1(1, 2), c2(3, 4);
-	complex_operation c3 = c1 + c2;
-	c3.print_comp();
-
-	complex_operation c4 = c1 - c2;
-	c4.print_comp();
-
+	++c1;
+	c1.print_comp();
+	
+	--c2;
+	c2.print_comp();
 	
 	cout<<"end.."<<endl;
 	system("pause");
 	return 0;
 }
+
