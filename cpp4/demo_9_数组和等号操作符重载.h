@@ -28,5 +28,5 @@ public:
 
 public:
 	int& operator[](int i);
-
+	Array& operator=(Array &a1);
 };

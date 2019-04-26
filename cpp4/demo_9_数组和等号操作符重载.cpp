@@ -5,7 +5,7 @@
 
 ****************************************/
 #include<iostream>
-#include "demo_9_数组操作符重载.h"
+#include "demo_9_数组和等号操作符重载.h"
 using namespace std;
 
 //类的实现
@@ -56,4 +56,23 @@ int Array::length()
 int& Array::operator[](int i) {
 
 	return m_space[i];
+}
+
+Array& Array::operator=(Array &a1) {
+	//1.释放原来的内存空间
+	if (this->m_space!=NULL)
+	{
+		delete[] m_space;
+		m_length = 0;
+	}
+	//2.根据a1大小分配新内存
+	m_length = a1.m_length;
+	m_space = new int[m_length];
+	//3.copy 数据
+	for (int i=0;i<m_length;i++)
+	{
+		m_space[i] = a1[i];
+	}
+
+	return *this;
 }

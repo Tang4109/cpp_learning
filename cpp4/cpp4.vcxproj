@@ -19,11 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_9_数组操作符重载.cpp" />
-    <ClCompile Include="demo_9_数组操作符重载_test.cpp" />
+    <ClCompile Include="demo_9_数组和等号操作符重载.cpp" />
+    <ClCompile Include="demo_9_数组和等号操作符重载_test.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="demo_9_数组操作符重载.h" />
+    <ClInclude Include="demo_9_数组和等号操作符重载.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
