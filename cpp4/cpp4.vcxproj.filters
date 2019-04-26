@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_7_运算符重载案例.cpp">
+    <ClCompile Include="demo_8_等号操作符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
