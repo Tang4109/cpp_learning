@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_8_等号操作符重载.cpp">
+    <ClCompile Include="demo_9_数组操作符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo_9_数组操作符重载_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="demo_9_数组操作符重载.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
