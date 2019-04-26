@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  数组操作符重载
+*@brief  数组和等号操作符重载
 *@author ZhangYunjia
 *@date   2019/4/26/10:32
 
@@ -76,3 +76,26 @@ Array& Array::operator=(Array &a1) {
 
 	return *this;
 }
+bool  Array::operator==(Array &a1) {
+	if (this->m_length!=a1.m_length)
+	{
+		return false;
+	}
+	for (int i=0;i<m_length;i++)
+	{
+		if (this->m_space[i]!=a1[i])
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+bool  Array::operator!=(Array &a1) {
+	//if (*this==a1)
+	//	return false;
+	//return true; 
+	return !(*this == a1);
+}
+

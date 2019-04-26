@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  数组操作符重载
+*@brief  数组和等号操作符重载
 *@author ZhangYunjia
 *@date   2019/4/26/10:32
 
@@ -29,4 +29,6 @@ public:
 public:
 	int& operator[](int i);
 	Array& operator=(Array &a1);
+	bool operator==(Array &a1);
+	bool operator!=(Array &a1);
 };
