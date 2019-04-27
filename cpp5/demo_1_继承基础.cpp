@@ -38,7 +38,9 @@ int main()
 
 	parent p1;
 	child c1;
-	c1.a;
+	c1.a = 1;
+	c1.b = 2;
+	
 	
 	cout<<"end.."<<endl;
 	system("pause");
