@@ -19,7 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_11_逻辑与和逻辑或运算符重载.cpp" />
+    <ClCompile Include="demo_12_字符串类.cpp" />
+    <ClCompile Include="demo_12_字符串类_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="demo_12_字符串类.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
