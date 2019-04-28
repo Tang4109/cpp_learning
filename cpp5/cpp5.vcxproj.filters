@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_4_继承中的构造和析构.cpp">
+    <ClCompile Include="demo_5_继承和组合下的构造和析构.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
