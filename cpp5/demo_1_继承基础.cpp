@@ -13,6 +13,7 @@ class parent
 {
 public:
 	void print() {
+		a = b = 0;
 		cout << a << endl << b << endl;
 	}
 protected:
@@ -40,6 +41,7 @@ int main()
 	child c1;
 	c1.a = 1;
 	c1.b = 2;
+	c1.print();
 	
 	
 	cout<<"end.."<<endl;
