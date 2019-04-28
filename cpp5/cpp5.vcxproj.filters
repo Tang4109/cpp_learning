@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_2_单个类的访问控制.cpp">
+    <ClCompile Include="demo_3_类型兼容性原则.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
