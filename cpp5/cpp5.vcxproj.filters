@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_8_多继承.cpp">
+    <ClCompile Include="demo_9_多继承的二义性.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
