@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_7_继承中的static关键字.cpp">
+    <ClCompile Include="demo_8_多继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
