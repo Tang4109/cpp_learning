@@ -44,7 +44,6 @@ public:
 private:
 	int b3;
 
-
 };
 
 
