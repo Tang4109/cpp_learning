@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_11_类型兼容性与函数重载.cpp">
+    <ClCompile Include="demo_12_多态案例.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
