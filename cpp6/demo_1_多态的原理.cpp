@@ -37,7 +37,7 @@ public:
 	}
 
 };
-
+ 
 void print(parent *base) {
 	base->print();//多态
 	//迟绑定（虚函数表）
