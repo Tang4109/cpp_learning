@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_5_纯虚函数与抽象类.cpp">
+    <ClCompile Include="demo_6_抽象类编程实例.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
