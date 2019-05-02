@@ -18,5 +18,8 @@
     <ClCompile Include="demo_3_vptr指针的分布初始化.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="demo_1_多态的原理.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
