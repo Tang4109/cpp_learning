@@ -88,7 +88,7 @@ int main()
 	print_salary(p2);
 
 
-	cout << "end.." << endl;
+	//cout << "end.." << endl;
 	system("pause");
 	return 0;
 }
