@@ -90,5 +90,5 @@ int main()
 
 	//cout << "end.." << endl;
 	system("pause");
-	return 0;
+	return 1;
 }
