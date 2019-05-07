@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="二级指针三种内存模型训练.c">
+    <ClCompile Include="demo_1_结构体的深拷贝和浅拷贝.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
