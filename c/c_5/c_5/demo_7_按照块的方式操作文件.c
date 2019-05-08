@@ -30,7 +30,7 @@ void file_write() {
 		t_array[i].age = i + 31;
 	}
 
-	fp = fopen(filename, "w+b");
+	fp = fopen(filename, "w");
 
 	if (fp=NULL)
 	{
@@ -48,12 +48,13 @@ void file_write() {
 	{
 		fclose(fp);
 	}
-
+	
 	return;
 }
 
 int main()
 {
+	
 
 	file_write();
 	
