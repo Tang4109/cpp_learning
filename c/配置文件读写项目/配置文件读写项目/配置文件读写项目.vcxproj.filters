@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="配置文件集成测试框架.c">
+    <ClCompile Include="..\..\c_5\c_5\demo_5_按照行写文件.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="cfg_op.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="cfg_op.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

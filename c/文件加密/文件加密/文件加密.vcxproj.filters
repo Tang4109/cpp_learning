@@ -18,7 +18,7 @@
     <ClCompile Include="des.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="demo_2_文件加解密框架.c">
+    <ClCompile Include="demo_3_文件解密框架.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

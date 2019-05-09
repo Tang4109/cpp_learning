@@ -115,11 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cfg_op.c" />
-    <ClCompile Include="配置文件集成测试框架.c" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="cfg_op.h" />
+    <ClCompile Include="..\..\c_5\c_5\demo_5_按照行写文件.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
