@@ -11,6 +11,7 @@
 #include<stdio.h>
 #include "socketclientdll.h"
 
+
 int main()
 {
 
@@ -63,3 +64,19 @@ int main()
 	system("pause");
 	return 0;
 }
+
+
+//int mainx()
+//{
+//
+//	ITCAST_LOG(__FILE__, __LINE__, LogLevel[1], 0, "1111");
+//	ITCAST_LOG(__FILE__, __LINE__, LogLevel[2], 0, "2222");
+//	ITCAST_LOG(__FILE__, __LINE__, LogLevel[3], 0, "3333");
+//	ITCAST_LOG(__FILE__, __LINE__, LogLevel[4], 0, "4444");
+//
+//
+//	
+//	printf("end...\n");
+//	system("pause");
+//	return 0;
+//}
