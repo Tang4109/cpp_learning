@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_1_指针的其他用法.c">
+    <ClCompile Include="demo_2_多级指针.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
