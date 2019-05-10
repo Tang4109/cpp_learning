@@ -1,6 +1,3 @@
-
-//written by wangbaoming1999@163.com
-//20140323
 //itcastlog.h 日志头文件
 
 
