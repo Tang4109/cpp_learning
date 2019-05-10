@@ -111,3 +111,93 @@ int cltSocketDestory(void *handle/*in*/) {
 	printf("func cltSocketDestory() end.\n");
 	return ret;
 }
+//////////////////////////////////////////////////////////////////////////
+//api接口2
+__declspec(dllexport)
+int cltSocketInit2(void **handle) {
+
+	return cltSocketInit(handle);
+}
+
+//客户端发报文
+__declspec(dllexport)
+int cltSocketSend2(void *handle, unsigned char *buf, int buflen) {
+
+	return cltSocketSend(handle,buf,buflen);
+}
+//客户端收报文
+__declspec(dllexport)
+int cltSocketRev2(void *handle, unsigned char **out_buf, int *outbuflen) {
+
+	int ret = 0;
+	if (handle == NULL || out_buf == NULL || outbuflen == NULL)
+	{
+		ret = -4;
+		printf("func cltSocketRev2 err:%d\n", ret);
+		return ret;
+	}
+
+	printf("func cltSocketRev2() begin.\n");
+	SCK_HANDLE* handle_ = NULL;
+	unsigned char* tmp = NULL;
+
+	handle_ = (SCK_HANDLE*)handle;
+	tmp = (unsigned char*)malloc(handle_->p_len);//函数内分配内存空间
+	if (tmp==NULL)
+	{
+		ret = -5;
+		printf("func cltSocketRev2 err:%d\n", ret);
+		return ret;
+
+	}
+
+	memcpy(tmp, handle_->p, handle_->p_len);
+	*outbuflen = handle_->p_len;
+	*out_buf = tmp;//间接赋值
+	printf("func cltSocketRev2() end.\n");
+	return ret;
+}
+__declspec(dllexport)
+int cltSocketRev2_Free(unsigned char **buf) {
+	int ret = 0;
+	if (buf==NULL)
+	{
+		ret = -6;
+		return ret;
+	}
+	printf("func cltSocketRev2_Free() begin.\n");
+	if (*buf!=NULL)
+	{
+		free(*buf);
+	}
+	*buf = NULL;//间接修改实参的值
+	printf("func cltSocketRev2_Free() end.\n");
+	return ret;
+}
+//客户端释放资源
+__declspec(dllexport)
+int cltSocketDestory2(void **handle) {
+	int ret = 0;
+
+	SCK_HANDLE* tmp = NULL;
+	if (handle==NULL)
+	{
+		ret = -7;
+		return ret;
+
+	}
+	printf("func cltSocketDestory2() begin.\n");
+
+	tmp = *handle;
+	if (tmp!=NULL)
+	{
+		if (tmp->p)
+		{
+			free(tmp->p);
+		}
+		free(tmp);
+	}
+	*handle = NULL;
+	printf("func cltSocketDestory2() end.\n");
+	return ret;
+}

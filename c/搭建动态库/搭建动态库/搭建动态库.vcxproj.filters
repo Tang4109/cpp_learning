@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="测试框架.c">
+    <ClCompile Include="测试框架2.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -121,7 +121,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="测试框架.c" />
+    <ClCompile Include="测试框架2.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="socketclientdll.h" />
