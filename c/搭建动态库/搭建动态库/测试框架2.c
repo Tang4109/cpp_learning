@@ -18,7 +18,7 @@ int main()
 	int ret = 0;
 	void *handle = NULL;
 	char buf[128];
-	int buf_len = -3;
+	int buf_len = 3;
 	strcpy(buf, "zzz");
 
 	//char out_buf[128];//常量指针，不能被修改，所以将out_buf定义为普通指针

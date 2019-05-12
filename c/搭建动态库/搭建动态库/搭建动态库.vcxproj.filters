@@ -15,12 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="测试框架2.c">
+    <ClCompile Include="demo_1_内存泄漏代码检查.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="memwatch.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="socketclientdll.h">
+    <ClInclude Include="memwatch.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
