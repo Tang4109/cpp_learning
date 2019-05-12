@@ -43,14 +43,14 @@ int main()
 	}
 
 	//客户端收报文
-	ret = cltSocketRev2(handle, &out_buf, &out_buf_len);
+	ret = cltSocketRev2(handle, &out_buf, &out_buf_len);//在动态库中分配内存
 	if (ret != 0)
 	{
 		printf("func cltSocketInit() err: %d\n", ret);
 		return ret;
 	}
-
-	ret = cltSocketRev2_Free(&out_buf);//避免野指针，同时将out_buf置为NULL
+	//不要显式地释放内存，最好在动态库中释放内存
+	ret = cltSocketRev2_Free(&out_buf);//动态库中释放内存。避免野指针，同时将out_buf置为NULL
 	if (ret != 0)
 	{
 		printf("func cltSocketInit() err: %d\n", ret);

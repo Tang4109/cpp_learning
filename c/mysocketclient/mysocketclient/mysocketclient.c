@@ -10,6 +10,7 @@
 #include<stdio.h>
 #include"itcastlog.h"
 
+
 typedef struct _SCK_HANDLE {
 
 	char version[64];

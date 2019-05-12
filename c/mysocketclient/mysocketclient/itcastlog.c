@@ -6,8 +6,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 #include "itcastlog.h"
+
 
 #define ITCAST_DEBUG_FILE_	"socketclient.log"
 #define ITCAST_MAX_STRING_LEN 		10240
