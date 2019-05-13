@@ -10,7 +10,6 @@
 #include<string.h>
 #include<stdio.h>
 
-
 typedef struct node
 {
 	int data;
@@ -176,8 +175,8 @@ int SLIST_reverse(SLIST* phead) {
 
 
 	//初始化
-	p = phead;
-	q = phead->next;
+	p = phead->next;
+	q = phead->next->next;
 	//一个节点一个节点的逆置
 	while (q)
 	{
