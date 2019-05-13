@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  链表的添加和打印
+*@brief  链表的删除和销毁
 *@author ZhangYunjia
 *@date   2019/5/12/15:37
 
@@ -11,11 +11,11 @@
 #include<stdio.h>
 
 
-typedef struct SLIST
+typedef struct node
 {
 	int data;
 
-	struct	SLIST *next;//结构体套指向自己的结构体指针
+	struct	node *next;//结构体套指向自己的结构体指针
 
 }SLIST;
 
@@ -84,14 +84,81 @@ int SLIST_print(SLIST* phead) {
 	return 0;
 }
 int SLIST_insert(SLIST* phead, int x, int y) {
+	SLIST *pM, *pcur, *ppre;
+	
+	//创建新的业务节点pm
+	pM = (SLIST *)malloc(sizeof(SLIST));
+	if (pM==NULL)
+	{
+		return -1;
+	}
+	pM->next=NULL;
+	pM->data = y;
+	//遍历链表
+	ppre = phead;
+	pcur = phead->next;
+
+	while (pcur)
+	{
+		if (pcur->data==x)
+		{
+			break;
+		}
+		ppre = pcur;
+		pcur = pcur->next;
+	}
+	//新节点链接后续节点
+	pM->next = ppre->next;
+	//前驱节点链接新节点
+	ppre->next = pM;
 
 	return 0;
 }
 int SLIST_delete(SLIST* phead, int y) {
+	SLIST *pcur, *ppre;
+	
+	//初始化
+	ppre = phead;
+	pcur = phead->next;
+
+	while (pcur)
+	{
+		if (pcur->data==y)
+		{
+			break;
+		}
+		ppre = pcur;
+		pcur = pcur->next;
+	}
+	if (pcur==NULL)
+	{
+		printf("不存在%d\n", y);
+		return -1;
+	}
+
+	ppre->next = pcur->next;
+
+	if (pcur!=NULL)
+	{
+		free(pcur);
+	}
+
 
 	return 0;
 }
 int SLIST_destroy(SLIST* phead) {
+	SLIST* tmp = NULL;
+	if (phead==NULL)
+	{
+		return -1;
+	}
+	while (phead!=NULL)
+	{
+		tmp = phead->next;
+		free(phead);
+		phead = tmp;
+
+	}
 
 	return 0;
 }
@@ -103,10 +170,14 @@ int main()
 	SLIST* head = create_list();
 	ret = SLIST_print(head);
 
-	//ret = SLIST_insert(head, 20, 19);
+	ret = SLIST_insert(head, 20, 19);
+	ret = SLIST_print(head);
+	
+	SLIST_delete(head, 19);
+	ret = SLIST_print(head);
 
-	//ret = SLIST_print(head);
-
+	ret = SLIST_destroy(head);
+	
 
 	printf("end...\n");
 	system("pause");
