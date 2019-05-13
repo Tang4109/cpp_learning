@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  链表的删除和销毁
+*@brief  链表的逆置
 *@author ZhangYunjia
 *@date   2019/5/12/15:37
 
@@ -24,6 +24,7 @@ int SLIST_print(SLIST* phead);//遍历链表
 int SLIST_insert(SLIST* phead, int x, int y);//插入
 int SLIST_delete(SLIST* phead, int y);//删除
 int SLIST_destroy(SLIST* phead);
+int SLIST_reverse(SLIST* phead);
 
 SLIST* create_list() {
 
@@ -163,6 +164,37 @@ int SLIST_destroy(SLIST* phead) {
 	return 0;
 }
 
+int SLIST_reverse(SLIST* phead) {
+	
+	SLIST* p = NULL;//前驱指针
+	SLIST *q = NULL;//当前指针
+	SLIST *t = NULL;//缓存的下一个节点
+	if (phead==NULL||phead->next==NULL||phead->next->next==NULL)
+	{
+		return 0;
+	}
+
+
+	//初始化
+	p = phead;
+	q = phead->next;
+	//一个节点一个节点的逆置
+	while (q)
+	{
+		t = q->next;//缓存后面的链表
+		q->next = p;//逆置
+
+		p = q;//让p下移一个节点
+		q = t; //让q下移一个节点
+
+	}
+	//头结点变成尾部节点
+	phead->next->next = NULL;
+	phead->next = p;
+
+	return 0;
+}
+
 
 int main()
 {
@@ -174,6 +206,9 @@ int main()
 	ret = SLIST_print(head);
 	
 	SLIST_delete(head, 19);
+	ret = SLIST_print(head);
+
+	ret = SLIST_reverse(head);
 	ret = SLIST_print(head);
 
 	ret = SLIST_destroy(head);
