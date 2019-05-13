@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_2_静态链表.c">
+    <ClCompile Include="demo_3_链表的基本操作.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
