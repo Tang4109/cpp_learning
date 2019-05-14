@@ -15,11 +15,40 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_6_抽象类编程实例.cpp">
+    <ClCompile Include="sck_factory_1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="demo_5_纯虚函数与抽象类.cpp">
+    <ClCompile Include="sck_factory_2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="enc_dec_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="des.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main_class_enc_dec.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="socket_protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sck_factory_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sck_factory_2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enc_dec_protocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="enc_dec_1.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="des.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
