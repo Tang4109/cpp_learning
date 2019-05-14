@@ -68,6 +68,24 @@ public:
 
 };
 
+class architect :public programmer {
+private:
+	const char *name;
+	const char *job;
+	int salary;
+
+public:
+	architect(const char *name_, const char *job_, int salary_) {
+		this->name = name_;
+		this->job = job_;
+		this->salary = salary_;
+	}
+	virtual void get_salary() {
+		cout << "姓名：" << name << " 工种：" << job << " 薪资：" << salary << endl;
+	}
+
+};
+
 
 
 void print_salary(programmer &base) {
@@ -81,12 +99,17 @@ int main()
 
 	programmer *base = NULL;//ok
 
-	junior_programmer p("zyj", "java", 20000);
+	junior_programmer p("zyj", "java", 20000); 
 	print_salary(p);
 
 	mid_programmer p2("zrf", "python", 30000);
 	print_salary(p2);
 
+	high_programmer p3("xhh", "c++", 50000);
+	print_salary(p3);
+
+	architect p4("ljh", "html", 60000);
+	print_salary(p4);
 
 	//cout << "end.." << endl;
 	system("pause");

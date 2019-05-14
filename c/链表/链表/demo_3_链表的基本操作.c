@@ -10,11 +10,11 @@
 #include<string.h>
 #include<stdio.h>
 
-typedef struct node
+typedef struct SLIST
 {
 	int data;
 
-	struct	node *next;//结构体套指向自己的结构体指针
+	struct	SLIST *next;//结构体套指向自己的结构体指针
 
 }SLIST;
 
