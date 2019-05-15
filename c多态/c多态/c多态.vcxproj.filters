@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_2_函数指针基础语法.c">
+    <ClCompile Include="demo_3_函数指针做函数参数.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
