@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_6_抽象类编程实例.cpp">
+    <ClCompile Include="demo_1_数组指针语法基础.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
