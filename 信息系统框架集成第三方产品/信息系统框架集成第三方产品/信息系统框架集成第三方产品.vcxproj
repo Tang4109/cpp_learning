@@ -117,7 +117,7 @@
   <ItemGroup>
     <ClCompile Include="des.c" />
     <ClCompile Include="enc_dec_1.cpp" />
-    <ClCompile Include="main_class_enc_dec.cpp" />
+    <ClCompile Include="main_class_class.cpp" />
     <ClCompile Include="sck_factory_1.cpp" />
     <ClCompile Include="sck_factory_2.cpp" />
   </ItemGroup>
