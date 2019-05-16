@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_5_类模板基础语法.cpp">
+    <ClCompile Include="demo_6_复数类_所有函数写在类的内部.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
