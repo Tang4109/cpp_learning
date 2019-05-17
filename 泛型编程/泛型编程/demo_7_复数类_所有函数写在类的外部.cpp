@@ -33,6 +33,7 @@ private:
 
 //运算符重载的正规写法:<<>>只能用友元函数，其他运算符重载都要写成成员函数，不要滥用友元函数
 template<typename T>
+//友元函数是全局函数，不属于类，所以不能加类的域名作用符
 ostream& operator<<(ostream &out, complex<T> &c3) {
 
 	out<< "a:" << c3.a << endl << "b:" << c3.b << endl;
