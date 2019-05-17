@@ -28,6 +28,6 @@ public:
 
 protected:
 	T* m_space;
-	T m_len;
+	int m_len;
 
 };
