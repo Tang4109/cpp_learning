@@ -15,8 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_8_类模板中的static关键字.cpp">
+    <ClCompile Include="my_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="my_vector_test.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my_vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

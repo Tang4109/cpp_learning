@@ -115,7 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="demo_8_类模板中的static关键字.cpp" />
+    <ClCompile Include="my_vector.cpp" />
+    <ClCompile Include="my_vector_test.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="my_vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
