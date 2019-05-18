@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_1_异常的基本语法.cpp">
+    <ClCompile Include="demo_2_栈解旋.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
