@@ -27,7 +27,7 @@ int main()
 	strcpy(p1, "zyj");
 	//p2 = p1;//err
 	//p2 = static_cast<int>(p1);//err
-	p2 = reinterpret_cast<int*>(p1);
+	p2 = reinterpret_cast<int*>(p1);//强制类型转换
 	cout << p1 << endl;
 	cout << p2 << endl;
 
