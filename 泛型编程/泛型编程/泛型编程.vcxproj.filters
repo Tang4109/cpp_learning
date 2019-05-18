@@ -18,7 +18,7 @@
     <ClCompile Include="my_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="my_vector_test.cpp">
+    <ClCompile Include="my_vector_test2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

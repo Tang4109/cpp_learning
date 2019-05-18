@@ -116,7 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="my_vector.cpp" />
-    <ClCompile Include="my_vector_test.cpp" />
+    <ClCompile Include="my_vector_test2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="my_vector.h" />
