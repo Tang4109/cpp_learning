@@ -15,16 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="my_vector.cpp">
+    <ClCompile Include="demo_1_类型转换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="my_vector_test3.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="my_vector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

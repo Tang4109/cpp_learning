@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{082F5793-67C5-4B06-9F81-32CD404955DE}</ProjectGuid>
-    <RootNamespace>泛型编程</RootNamespace>
+    <ProjectGuid>{EA69DDB4-5C27-4E93-A10F-0B8BD78D6DF7}</ProjectGuid>
+    <RootNamespace>类型转换</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,11 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="my_vector.cpp" />
-    <ClCompile Include="my_vector_test3.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="my_vector.h" />
+    <ClCompile Include="demo_1_类型转换.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
