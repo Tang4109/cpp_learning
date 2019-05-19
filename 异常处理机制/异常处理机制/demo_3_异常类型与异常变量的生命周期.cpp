@@ -54,12 +54,12 @@ int main()
 	}
 
 	/*
-	catch (zyj e) //1.copy构造异常变量
+	catch (zyj e) //1.是一个元素，则copy构造异常变量
 	{
 		;
 	}
 	//2.指针可以和引用/元素写在一起
-	catch (zyj *e) 
+	catch (zyj *e)//必须抛出一个地址
 	{
 		;
 	}
@@ -69,7 +69,7 @@ int main()
 	{
 		;
 	}
-	//结论：对于抛出类对象，最好使用引用
+	//结论：对于抛出类对象的情况，最好使用引用
 	catch (const char* e)
 	{
 		cout << e << endl;
