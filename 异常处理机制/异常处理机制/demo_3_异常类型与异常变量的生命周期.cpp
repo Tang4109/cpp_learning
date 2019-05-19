@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  异常类型与异常变量
+*@brief  异常类型与异常变量（类对象）
 *@author ZhangYunjia
 *@date   2019/5/18/19:32
 
@@ -33,7 +33,7 @@ void my_strcpy(char* to, char* from) {
 	}
 	if (to==NULL)
 	{
-		throw xhh();
+		throw zyj();
 	}
 	if (*from=='z')
 	{
@@ -52,10 +52,24 @@ int main()
 	{
 		my_strcpy(buf2, buf1);
 	}
-	catch (zyj e) //copy构造异常变量
+
+	/*
+	catch (zyj e) //1.copy构造异常变量
 	{
 		;
 	}
+	//2.指针可以和引用/元素写在一起
+	catch (zyj *e) 
+	{
+		;
+	}
+	*/
+	//3.注意：引用和元素不能同时出现
+	catch (zyj &e) //使用引用会直接使用throw的那个对象，而不调用copy构造函数
+	{
+		;
+	}
+	//结论：对于抛出类对象，最好使用引用
 	catch (const char* e)
 	{
 		cout << e << endl;
