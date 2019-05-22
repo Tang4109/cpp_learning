@@ -128,9 +128,8 @@ int MyArray::getLen()
 	return m_len;
 }
 
-void main()
+int main()
 {
-
 	try
 	{
 		MyArray a(-5);
@@ -151,5 +150,5 @@ void main()
 
 	cout << "\nend..." << endl;
 	system("pause");
-	return;
+	return 0;
 }
