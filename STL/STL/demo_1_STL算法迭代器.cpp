@@ -22,7 +22,7 @@ void main_test() {
 	for (vector<int>::iterator it=v1.begin();it!=v1.end();it++)
 	{
 		cout << *it << " ";
-	}
+	} 
 	//3算法:算法和迭代器进行无缝的连接
 	int num = count(v1.begin(), v1.end(), 3);
 	cout << endl;

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_1_STL算法迭代器.cpp">
+    <ClCompile Include="demo_2_string.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
