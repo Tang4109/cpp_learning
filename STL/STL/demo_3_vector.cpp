@@ -106,6 +106,45 @@ void vector_iterator()
 	}
 
 }
+//删除/插入操作
+void vector_delete()
+{
+	vector<int> v1(10);//分配内存空间
+	for (int i = 0; i < v1.size(); i++)
+	{
+		v1[i] = i;
+	}
+	//区间删除
+	v1.erase(v1.begin(), v1.begin() + 3);
+	print(v1);
+	//指定位置删除
+	v1.erase(v1.begin());
+	cout << endl;
+	print(v1);
+	//根据元素的值
+	v1[3] = 4;
+	cout << endl;
+	print(v1);
+	for (vector<int>::iterator it=v1.begin();it!=v1.end();)
+	{
+		if (*it==4)
+		{
+			it = v1.erase(it);//erase删除函数会让it自动下移
+			
+		}
+		else
+		{
+			it++;
+		}
+	}
+	cout << endl;
+	print(v1);
+
+	v1.insert(v1.begin(), 100);
+	v1.insert(v1.end(), 200);
+	cout << endl;
+	print(v1);
+}
 
 int main()
 {
@@ -113,7 +152,8 @@ int main()
 	//vector_base();
 	//vector_init();
 	//vector_search();
-	vector_iterator();
+	//vector_iterator();
+	vector_delete();
 	cout<<"\nend.."<<endl;
 	system("pause");
 	return 0;
