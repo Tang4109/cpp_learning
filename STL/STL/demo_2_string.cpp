@@ -7,6 +7,7 @@
 #define _SCL_SECURE_NO_WARNINGS
 #include<iostream>
 #include "string"
+#include "algorithm"
 using namespace std;
 
 //string类的初始化
@@ -101,7 +102,29 @@ void string_search() {
 	cout << "num:" << num << endl;
 	//替换
 	cout << s << endl;
+}
+//插入和删除
+void string_delete_insert() {
+	string s = "hello zyj hello you are zyj  a big  zyj boy zyj";
+	string::iterator it=find(s.begin(), s.end(), 'z');
+	if (it!=s.end())
+	{
+		s.erase(it);
+	}
+	cout << s << endl;
+	s.insert(0, "999");
+	cout << s << endl;
+	s.insert(s.length(), "666");
+	cout << s << endl;
+}
+//算法
+void string_algorithom() {
+	string s = "hello zyj hello You are zyj  A big  zYj boy zyj";
 
+	transform(s.begin(), s.end(),s.begin(), toupper);
+	cout << s << endl;
+	transform(s.begin(), s.end(), s.begin(), tolower);
+	cout << s << endl;
 }
 
 int main()
@@ -115,6 +138,10 @@ int main()
 	string_connect();
 	cout << "*************************3" << endl;
 	string_search();
+	cout << "*************************4" << endl;
+	string_delete_insert();
+	cout << "*************************5" << endl;
+	string_algorithom();
 
 	cout<<"\nend.."<<endl;
 	system("pause");
