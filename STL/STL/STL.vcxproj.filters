@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_7_list.cpp">
+    <ClCompile Include="demo_8_priority_queue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
