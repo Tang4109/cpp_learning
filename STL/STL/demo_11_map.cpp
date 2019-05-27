@@ -22,7 +22,7 @@ void print(map<int, string>& map1)
 }
 //map 容器基础操作
 void map_()
-{
+{ 
 	map<int, string> map1;
 	//插入方法1
 	map1.insert(pair<int, string>(1, "teacher01"));
@@ -82,6 +82,42 @@ void map_compare()
 	//遍历
 	cout << "遍历：" << endl;
 	print(map1);
+	
+	//查找
+	map<int, string>::iterator it2 = map1.find(100);
+	if (it2 == map1.end())
+	{
+		cout << "key 100 的值 不存在" << endl;
+	}
+	else
+	{
+		cout << it2->first << "\t" << it2->second << endl;
+	}
+
+	//equal_range //异常处理
+	pair<map<int, string>::iterator, map<int, string>::iterator> mypair = map1.equal_range(5); //返回两个迭代器 形成一个 pair
+																							   //第一个迭代器 >= 5的 位置 
+																							   //第一个迭代器 = 5的 位置 
+
+	if (mypair.first == map1.end())
+	{
+		cout << "第一个迭代器 >= 5的 位置 不存在" << endl;
+	}
+	else
+	{
+		cout << mypair.first->first << "\t" << mypair.first->second << endl;
+	}
+
+	//使用第二个迭代器
+	if (mypair.second == map1.end())
+	{
+		cout << "第二个迭代器 > 5的 位置 不存在" << endl;
+	}
+	else
+	{
+		cout << mypair.second->first << "\t" << mypair.second->second << endl;
+	}
+
 	//删除
 	cout << "头部元素：" << endl;
 	while (!map1.empty())
