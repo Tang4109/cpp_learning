@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_1_函数对象.cpp">
+    <ClCompile Include="demo_2_一元函数对象和一元谓词.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
