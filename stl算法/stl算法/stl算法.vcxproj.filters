@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_6_函数适配器综合案例.cpp">
+    <ClCompile Include="demo_7_stl常用算法for_each.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
