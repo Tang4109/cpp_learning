@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  test
+*@brief  transform
 *@author ZhangYunjia
 *@date   2019/6/3/22:57
 
@@ -103,7 +103,7 @@ int main()
 	my_list.resize(v1.size());
 	transform(v1.begin(), v1.end(), my_list.begin(), bind2nd(multiplies<int>(),10));//»Øµ÷º¯Êý
 	cout << endl;
-	print2(v1);
+	print_list(my_list);
 
 
 
