@@ -28,7 +28,7 @@ private:
 };
 //¶þÔªº¯Êý
 void two_function()
-{
+{ 
 	vector<int> v1, v2;
 	vector<int> v3;
 	v1.push_back(1);
