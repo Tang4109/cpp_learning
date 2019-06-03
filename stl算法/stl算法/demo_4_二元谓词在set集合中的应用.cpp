@@ -1,5 +1,5 @@
 /****************************************!
-*@brief  还有bug,明天调试
+*@brief  二元谓词在set集合中的应用
 *@author ZhangYunjia
 *@date   2019/6/2/22:54
 
@@ -9,6 +9,7 @@
 #include "vector"
 #include "algorithm"
 #include "set"
+#include <string>
 using namespace std;
 
 
@@ -17,7 +18,7 @@ template<typename T>
 class sumAdd
 {
 public:
-	T operator()(T t1, T t2)
+	T operator() (T t1, T t2)
 	{
 		return t1 + t2;
 	}
@@ -85,7 +86,7 @@ void two_element()
 
 struct compareNoCase
 {
-	bool operator()(const string& str1, const string& str2)
+	bool operator()(const string& str1, const string& str2) const
 	{
 		string str1_;
 		str1_.resize(str1.size());
@@ -95,6 +96,7 @@ struct compareNoCase
 		transform(str2.begin(), str2.end(), str2_.begin(), tolower);//tolower-预定义函数对象
 
 		return (str1_ < str2_);
+
 	}
 
 };
@@ -102,24 +104,24 @@ struct compareNoCase
 
 void set_()
 {
-	set<string> set1;
-	set1.insert("bbb");
-	set1.insert("aaa");
-	set1.insert("ccc");
-	set<string>::iterator it = set1.find("Aaa");//find 默认区分大小写
-	if (it!=set1.end())
-	{
-		cout << "查找到aaa" << endl;
-	}
-	else
-	{
-		cout << "没有查找到aaa" << endl;
+	//set<string> set1;
+	//set1.insert("bbb");
+	//set1.insert("aaa");
+	//set1.insert("ccc");
+	//set<string>::iterator it = set1.find("Aaa");//find 默认区分大小写
+	//if (it!=set1.end())
+	//{
+	//	cout << "查找到aaa" << endl;
+	//}
+	//else
+	//{
+	//	cout << "没有查找到aaa" << endl;
 
-	}
+	//}
 
 	set<string, compareNoCase> set2;
-	set2.insert("bbb");
 	set2.insert("aaa");
+	set2.insert("bbb");
 	set2.insert("ccc");
 
 	set<string>::iterator it2 = set2.find("Aaa");//find 默认区分大小写
@@ -138,6 +140,9 @@ void set_()
 
 int main()
 {
+
+
+
 
 	set_();
 
