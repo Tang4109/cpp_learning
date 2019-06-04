@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_9_transform_for_each.cpp">
+    <ClCompile Include="demo_10_常用查找算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
