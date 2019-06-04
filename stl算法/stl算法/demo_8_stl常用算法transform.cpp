@@ -7,6 +7,7 @@
 
 
 #include<iostream>
+#include "iterator"
 #include <string>
 #include <vector>
 #include <list>
@@ -101,10 +102,13 @@ int main()
 	//函数适配器
 	list<int> my_list;
 	my_list.resize(v1.size());
-	transform(v1.begin(), v1.end(), my_list.begin(), bind2nd(multiplies<int>(),10));//回调函数
+	transform(v1.begin(), v1.end(), my_list.begin(), bind2nd(multiplies<int>(),10));
 	cout << endl;
 	print_list(my_list);
 
+	//trasform 可以把运算结果直接输出到屏幕
+	cout << endl;
+	transform(my_list.begin(), my_list.end(), ostream_iterator<int>(cout, " "),negate<int>());
 
 
 	cout << "\nend.." << endl;
