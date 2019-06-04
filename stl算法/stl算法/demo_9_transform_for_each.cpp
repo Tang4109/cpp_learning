@@ -36,11 +36,12 @@ int main()
 	{
 		v1.push_back(i);
 	}
-
+	//一般情况下for_each所使用的函数对象，参数是引用，没有返回值
 	for_each(v1.begin(), v1.end(), FuncShowElemt<int>);
 
 
 	vector<int> v2 = v1;
+	//一般情况下transform所使用的函数对象，参数不是引用，有返回值
 	transform(v1.begin(), v1.end(), v2.begin(), FuncShowElemt2<int>);
 
 	
