@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="demo_12_常用拷贝和替换算法.cpp">
+    <ClCompile Include="demo_14_常用集合算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
